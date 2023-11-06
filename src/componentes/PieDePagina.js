@@ -1,4 +1,5 @@
 import React from "react";
+import '../estilos/PieDePagina.css';
 import Facebook from '../imagenes/imagen-facebook.png';
 import Gmail from '../imagenes/imagen-gmail.png';
 import Maps from '../imagenes/imagen-maps.png';
@@ -6,34 +7,38 @@ import YouTube from '../imagenes/imagen-youtube.png';
 
 function PieDePagina(){
     return(
-        <div>
+        <div className="contenedor-principal">
             <hr />
+            <div className="texto">
             <p>Transporte, Ingeniería y Maquinaria de Colombia S.A.S.</p>
-            <div>
+            </div>
+            <div className='contenedor-imagenes-texto'>
+            <div className='contenedor-imagenes'>
                 <img
                 className='imagen'
                 src={ YouTube }
                 alt='Foto de YouTube' />
                 <img
-                className=''
+                className='imagen'
                 src={ Facebook }
                 alt='Foto de Facebook' />
                 <img
-                className=''
+                className='imagen'
                 src={ Gmail }
                 alt='Foto de Gmail' />
                 <img
-                className=''
+                className='imagen'
                 src={ Maps }
                 alt='Foto de Maps' />
-                <div>
-                    <p>Contacto</p>
+            </div>
+                <div className="contenedor-texto">
+                    <p><b>Contacto</b></p>
                     <p>Timcosas@gmail.com</p>
                     <p>3142221847</p>
                     <p>Bogotá D.C.</p>
                     <p>Lun - Vie 08:00am a 5:00pm</p>
                 </div>
-            </div>
+                </div>
         </div>
     );
 }
