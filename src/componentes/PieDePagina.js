@@ -8,6 +8,7 @@ import YouTube from '../imagenes/imagen-youtube.png';
 function PieDePagina(){
     return(
         <div className="contenedor-principal">
+            <br /><br />
             <hr />
             <div className="texto">
             <p>Transporte, Ingeniería y Maquinaria de Colombia S.A.S.</p>

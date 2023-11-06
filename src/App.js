@@ -1,16 +1,27 @@
 import './App.css';
+import Boton from './componentes/Boton';
 import EncabezadoSecundario from './componentes/EncabezadoSecundario';
-import ImagenRetro from './componentes/ImagenRetro';
-import MenuPrincipal from './componentes/MenuPrincipal';
+import MenuSecundario from './componentes/MenuSecundario';
 import PieDePagina from './componentes/PieDePagina';
+import TituloPrincipal from './componentes/TituloPrincipal';
 
 function App() {
   return (
     <div className="App">
-      
       <EncabezadoSecundario />
-      <MenuPrincipal />
-      <ImagenRetro />
+      <MenuSecundario/>
+      <TituloPrincipal
+      titulo='MÓDULOS' />
+      <Boton
+      texto='Gestión de usuarios' />
+      <Boton
+      texto='Gestion' />
+      <Boton
+      texto='Gestión de usuarios' />
+      <Boton
+      texto='Gestión de usuarios' />
+      <Boton
+      texto='Gestión de usuarios' />
       <PieDePagina />
     </div>
   );
