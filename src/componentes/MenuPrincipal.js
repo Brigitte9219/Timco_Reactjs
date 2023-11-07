@@ -9,7 +9,7 @@ function MenuPrincipal(){
             {/* Se debe cambiar a Link to*/}
             <Link to={'/modulos'}>Módulos</Link>
             <Link to={'/contacto'}>Contacto</Link>
-            <a href='/'>PQRSF</a>
+            <Link to={'/pqrsf'}>PQRSF</Link>
             </div>
         </div>
     );
