@@ -14,7 +14,8 @@ function Pqrsf(){
         <div>
             <EncabezadoSecundario />
             <MenuSecundario />
-            <TituloPrincipal />
+            <TituloPrincipal
+            titulo='PQRSF' />
             <Texto
             descripcion='Al diligenciar el presente formulario usted autoriza el tratamiento de datos personales. Ver nuestra Política de Tratamiento de Datos Personales' />
             <FormInput

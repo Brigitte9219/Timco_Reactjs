@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import '../estilos/MenuSecundario.css';
 
 function MenuSecundario(){
@@ -6,10 +7,10 @@ function MenuSecundario(){
         <div className="contenedor-menusecundario">
             <div className="rectangulo">
             {/* Se debe cambiar a Link to*/}
-            <a href='/'>Inicio</a>
-            <a href='/'>Módulos</a>
-            <a href='/'>Contacto</a>
-            <a href='/'>PQRSF</a>
+            <Link to={'/'}>Inicio</Link>
+            <Link to={'/modulos'}>Módulos</Link>
+            <Link to={'/contacto'}>Contacto</Link>
+            <Link to={'/pqrsf'}>PQRSF</Link>
             </div>
         </div>
     );
