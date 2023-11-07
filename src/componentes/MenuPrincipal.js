@@ -8,7 +8,7 @@ function MenuPrincipal(){
             <div className="rectangulo">
             {/* Se debe cambiar a Link to*/}
             <Link to={'/modulos'}>Módulos</Link>
-            <a href='/'>Contacto</a>
+            <Link to={'/contacto'}>Contacto</Link>
             <a href='/'>PQRSF</a>
             </div>
         </div>
