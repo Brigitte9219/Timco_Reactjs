@@ -6,13 +6,12 @@ import Modulos from './paginas/Modulos';
 function App() {
   return (
     <div className="App">
-      <Inicio />
       <Router>
       <Routes>
-        <Route path="/Modulos" element={<Modulos />} />
+        <Route path="/" element={<Inicio />} />
+        <Route path="/modulos" element={<Modulos />} />
       </Routes>
-    </Router>
-      
+      </Router>
     </div>
   );
 }
