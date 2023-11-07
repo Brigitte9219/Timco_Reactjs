@@ -1,6 +1,8 @@
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import './App.css';
 import Contacto from './paginas/Contacto';
+import CuentaDos from './paginas/CuentaDos';
+import CuentaUno from './paginas/CuentaUno';
 import Inicio from './paginas/Inicio';
 import Modulos from './paginas/Modulos';
 import Pqrsf from './paginas/Pqrsf';
@@ -16,6 +18,8 @@ function App() {
         <Route path="/contacto" element={<Contacto />} />
         <Route path="/pqrsf" element={<Pqrsf />} />
         <Route path="/usuarios" element={<Usuarios />} />
+        <Route path="/cuentauno" element={<CuentaUno />} />
+        <Route path="/cuentados" element={<CuentaDos />} />
       </Routes>
       </Router>
     </div>

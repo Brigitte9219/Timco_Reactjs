@@ -1,12 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import '../estilos/BotonPequeño.css';
 
 function BotonPequeño(props){
     return(
         <div className="cajita">
-            <button className="botoncito">
-                { props.texto }
-            </button>
+            <Link to={props.link} className='botoncito' >{ props.texto }</Link>
         </div>
     );
 }

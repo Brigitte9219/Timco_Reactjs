@@ -16,7 +16,8 @@ function Usuarios(){
             <Texto
             descripcion='Este módulo sirve para crear la cuenta de los usuarios asignados a los diferentes proyectos de la compañía' />
             <BotonPequeño
-            texto='Crear cuenta' />
+            texto='Crear cuenta'
+            link={'/cuentauno'} />
             <BotonPequeño
             texto='Iniciar sesión' />
             <PieDePagina />
