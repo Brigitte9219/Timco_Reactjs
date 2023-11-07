@@ -4,12 +4,12 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     box-sizing: border-box;
 }
-.contenedor-encabezado{
+.contenedor-secundario-encabezado{
     color: white;
     font-weight: bold;
     font-size: 42px;
     line-height: 2;
-    border: 3px solid orange;
+    background-color: orange;
 }
 p{
     display: flex;

@@ -3,7 +3,7 @@ import '../estilos/EncabezadoPrincipal.css';
 
 function EncabezadoPrincipal(){
     return(
-        <div className="contenedor-encabezado">
+        <div className="contenedor-encabezado-principal">
             <p>SISTEMA DE INVENTARIOS</p>
             <p>TIMCO S.A.S.</p>
         </div>

@@ -3,7 +3,7 @@ import '../estilos/EncabezadoSecundario.css';
 
 function EncabezadoSecundario(){
     return(
-        <div className="contenedor-encabezado">
+        <div className="contenedor-secundario-encabezado">
             <p>SISTEMA DE INVENTARIOS TIMCO S.A.S.</p>
         </div>
     );

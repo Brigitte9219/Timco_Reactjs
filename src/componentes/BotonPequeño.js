@@ -3,8 +3,8 @@ import '../estilos/BotonPequeño.css';
 
 function BotonPequeño(props){
     return(
-        <div className="cajon">
-            <button className="boton">
+        <div className="cajita">
+            <button className="botoncito">
                 { props.texto }
             </button>
         </div>
