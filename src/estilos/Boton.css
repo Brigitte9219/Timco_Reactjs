@@ -19,6 +19,8 @@
     width: 500px;
     background-color: rgb(187, 184, 184);
     cursor: pointer;
+    display: flex;
+    justify-content: center;
 }
 .boton:hover{
     color: white;

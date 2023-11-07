@@ -13,7 +13,8 @@ function Modulos(){
             <TituloPrincipal
             titulo='MÓDULOS' />
             <Boton
-            texto='Gestión de usuarios' />
+            texto='Gestión de usuarios'
+            link={'/usuarios'} />
             <Boton
             texto='Información de los trabajadores' />
             <Boton

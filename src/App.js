@@ -4,6 +4,7 @@ import Contacto from './paginas/Contacto';
 import Inicio from './paginas/Inicio';
 import Modulos from './paginas/Modulos';
 import Pqrsf from './paginas/Pqrsf';
+import Usuarios from './paginas/Usuarios';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/modulos" element={<Modulos />} />
         <Route path="/contacto" element={<Contacto />} />
         <Route path="/pqrsf" element={<Pqrsf />} />
+        <Route path="/usuarios" element={<Usuarios />} />
       </Routes>
       </Router>
     </div>
