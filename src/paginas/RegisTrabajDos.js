@@ -7,7 +7,7 @@ import PieDePagina from "../componentes/PieDePagina";
 import Texto from "../componentes/Texto";
 import TituloPrincipal from "../componentes/TituloPrincipal";
 
-function RegisTrabajUno(){
+function RegisTrabajDos(){
     return(
         <div>
             <EncabezadoSecundario />
@@ -15,49 +15,49 @@ function RegisTrabajUno(){
             <TituloPrincipal
             titulo='Registrar' />
             <Texto
-            descripcion='A continuación, registre los datos del trabajador que ingresa a la compañía' />
+            descripcion='Continúe registrando los datos' />
             <FormInput
             type='text'
-            placeholder='Nombre completo' />
-            <FormInput
-            type='email'
-            placeholder='Correo electrónico' />
+            placeholder='RH' />
             <FormInput
             type='text'
-            placeholder='Tipo de identificación' />
+            placeholder='Grupo sanguíneo' />
+            <FormInput
+            type='text'
+            placeholder='Localidad' />
+            <FormInput
+            type='text'
+            placeholder='Ciudad de residencia' />
+            <FormInput
+            type='text'
+            placeholder='Barrio' />
+            <FormInput
+            type='text'
+            placeholder='Dirección' />
             <FormInput
             type='number'
-            placeholder='No de identificación' />
-            <FormInput
-            type='date'
-            placeholder='Fecha de expedición' />
-            <FormInput
-            type='text'
-            placeholder='Ciudad de expedición' />
-            <FormInput
-            type='date'
-            placeholder='Fecha de nacimiento' />
-            <FormInput
-            type='text'
-            placeholder='Lugar de nacimiento' />
+            placeholder='Telefono Móvil' />
             <FormInput
             type='number'
-            placeholder='Edad' />
+            placeholder='Telefono fijo' />
             <FormInput
             type='text'
-            placeholder='Estatura' />
+            placeholder='EPS' />
             <FormInput
             type='text'
-            placeholder='Género' />
+            placeholder='Fondo de pensiones' />
             <FormInput
             type='text'
-            placeholder='Estado civil' />
+            placeholder='Escolaridad' />
+            <FormInput
+            type='text'
+            placeholder='Profesión' />
             <BotonPequeño
             texto='Continuar'
-            link={'/RegisTrabajDos'} />
+            link={'/RegisTrabajTres'} />
             <PieDePagina />
         </div>
     );
 }
 
-export default RegisTrabajUno;
+export default RegisTrabajDos;
