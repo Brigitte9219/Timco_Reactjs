@@ -16,7 +16,8 @@ function Modulos(){
             texto='Gestión de usuarios'
             link={'/usuarios'} />
             <Boton
-            texto='Información de los trabajadores' />
+            texto='Información de los trabajadores'
+            link={'/trabajadores'} />
             <Boton
             texto='Información de los productos' />
             <Boton

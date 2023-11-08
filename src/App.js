@@ -6,6 +6,8 @@ import CuentaUno from './paginas/CuentaUno';
 import Inicio from './paginas/Inicio';
 import Modulos from './paginas/Modulos';
 import Pqrsf from './paginas/Pqrsf';
+import RegisTrabajUno from './paginas/RegisTrabajUno';
+import Trabajadores from './paginas/Trabajadores';
 import Usuarios from './paginas/Usuarios';
 
 function App() {
@@ -20,6 +22,8 @@ function App() {
         <Route path="/usuarios" element={<Usuarios />} />
         <Route path="/cuentauno" element={<CuentaUno />} />
         <Route path="/cuentados" element={<CuentaDos />} />
+        <Route path="/trabajadores" element={<Trabajadores />} />
+        <Route path="/registrabajuno" element={<RegisTrabajUno />} />
       </Routes>
       </Router>
     </div>
