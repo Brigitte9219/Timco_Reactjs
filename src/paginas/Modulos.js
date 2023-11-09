@@ -19,7 +19,8 @@ function Modulos(){
             texto='Información de los trabajadores'
             link={'/trabajadores'} />
             <Boton
-            texto='Información de los productos' />
+            texto='Información de los productos'
+            link={'/productos'}  />
             <Boton
             texto='Solicitar productos' />
             <Boton
