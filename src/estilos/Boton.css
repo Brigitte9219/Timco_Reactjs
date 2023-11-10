@@ -4,12 +4,12 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     box-sizing: border-box;
 }
-.cajon{
+.cubo{
     display:flex;
     justify-content: center;
     margin-bottom: 13px;
 }
-.boton{
+.cuboboton{
     color: black;
     font-size: 30px;
     font-weight: bold;
@@ -22,7 +22,7 @@
     display: flex;
     justify-content: center;
 }
-.boton:hover{
+.cuboboton:hover{
     color: white;
     background-color: orange;
 }

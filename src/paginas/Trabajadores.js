@@ -13,12 +13,18 @@ function Trabajadores(){
             <EncabezadoSecundario />
             <MenuSecundario />
             <TituloPrincipal
-            titulo='ADMINISTRAR INFORMACIÓN DE LOS TRABAJADORES' />
+            titulo='ADMINISTRAR INFORMACIÓN' />
+            <TituloPrincipal
+            titulo='DE LOS TRABAJADORES' />
             <Texto
-            descripcion='Este módulo le permitirá administrar información del personal que ingresa a la compañía.' />
+            descripcion='Este módulo le permitirá administrar' />
+            <Texto
+            descripcion='información del personal que' />
+            <Texto
+            descripcion='ingresa a la compañía.' /><br />
             <BotonPequeño
             link={'/RegisTrabajUno'}
-            texto='Registrar' />
+            texto='Registrar' /><br />
             <Boton
             link=''
             texto='Base de datos colaboradores' />

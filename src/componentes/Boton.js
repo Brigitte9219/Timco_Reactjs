@@ -4,8 +4,8 @@ import '../estilos/Boton.css';
 
 function Boton(props){
     return(
-        <div className="cajon">
-            <Link to={props.link} className='boton' >{ props.texto }</Link>
+        <div className="cubo">
+            <Link to={props.link} className='cuboboton' >{ props.texto }</Link>
         </div>
     );
 }
