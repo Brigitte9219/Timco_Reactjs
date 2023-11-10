@@ -12,9 +12,15 @@ function Reportes(){
             <EncabezadoSecundario />
             <MenuSecundario />
             <TituloPrincipal
-            titulo='GESTIONAR REPORTES O INFORMES' />
+            titulo='GESTIONAR REPORTES O' />
+            <TituloPrincipal
+            titulo='INFORMES' />
             <Texto
-            descripcion='Este módulo sirve para realizar consultas y descargar la información de acuerdo con su preferencia' />
+            descripcion='Este módulo sirve para realizar' />
+            <Texto
+            descripcion='consultas y descargar la información' />
+            <Texto
+            descripcion='de acuerdo con su preferencia' /><br /><br />
             <BotonPequeño
             texto='Consultar'
             link={'/reportesuno'} />
