@@ -7,7 +7,7 @@ import PieDePagina from "../componentes/PieDePagina";
 import Texto from "../componentes/Texto";
 import TituloPrincipal from "../componentes/TituloPrincipal";
 
-function RegisTrabajDos(){
+function RegisTrabajTres(){
     return(
         <div>
             <EncabezadoSecundario />
@@ -44,10 +44,10 @@ function RegisTrabajDos(){
             placeholder='Telefono fijo' />
             <BotonPequeño
             texto='Guardar'
-            link={'/RegisTrabajTres'} />
+            link={'/registrabajcuatro'} />
             <PieDePagina />
         </div>
     );
 }
 
-export default RegisTrabajDos;
+export default RegisTrabajTres;
