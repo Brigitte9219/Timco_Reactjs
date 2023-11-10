@@ -11,6 +11,7 @@ import CuentaUno from './paginas/CuentaUno';
 import Inicio from './paginas/Inicio';
 import Modulos from './paginas/Modulos';
 import Pqrsf from './paginas/Pqrsf';
+import PqrsfUno from './paginas/PqrsfUno';
 import Productos from './paginas/Productos';
 import RegisProducDos from './paginas/RegisProducDos';
 import RegisProducUno from './paginas/RegisProducUno';
@@ -37,6 +38,7 @@ function App() {
         <Route path="/contacto" element={<Contacto />} />
         <Route path="/contactouno" element={<ContactoUno />} />
         <Route path="/pqrsf" element={<Pqrsf />} />
+        <Route path="/pqrsfuno" element={<PqrsfUno />} />
         <Route path="/usuarios" element={<Usuarios />} />
         <Route path="/cuentauno" element={<CuentaUno />} />
         <Route path="/cuentados" element={<CuentaDos />} />

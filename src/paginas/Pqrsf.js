@@ -46,7 +46,8 @@ function Pqrsf(){
             <Texto
             descripcion='A continuación puede adjuntar cualquier archivo que considere para complementar su PQRSF.' />
             <BotonPequeño
-            texto='Enviar' />
+            texto='Enviar'
+            link={'/pqrsfuno'} />
             <PieDePagina />
         </div>
     );
