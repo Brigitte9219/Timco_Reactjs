@@ -28,7 +28,8 @@ function Modulos(){
             texto='Asignar productos'
             link={'/asignar'} />
             <Boton
-            texto='Gestionar reportes e informes' />
+            texto='Gestionar reportes e informes'
+            link={'/reportes'} />
             <PieDePagina />
         </div>
     );
