@@ -17,7 +17,7 @@ function Asignar(){
             descripcion='Este módulo le permitirá realizar la asignación de productos para que el personal pueda desarrollar su actividad de forma segura' />
             <BotonPequeño
             texto='Asignar'
-            link={'/asignar'} />
+            link={'/asignaruno'} />
             <PieDePagina />
         </div>
     );
