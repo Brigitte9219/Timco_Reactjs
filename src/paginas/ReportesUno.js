@@ -16,12 +16,24 @@ function ReportesUno(){
             titulo='Consulta' />
             <Texto
             descripcion='A continuación, ingrese los datos para realizar la consulta' />
-            <p>Nombre del trabajador</p><FormInput type='text' />
-            <p>No de identificación</p><FormInput type='number' />
-            <p>Nombre del producto</p><FormInput type='text' />
-            <p>Fecha de inicio</p><FormInput type='date' />
-            <p>Fecha final</p><FormInput type='date' />
-            <p>Proyecto</p><FormInput type='text' />
+            <div className="contenedor-formulario">
+            <div className="formulario-izq">
+            <FormInput placeholder='Nombre del trabajador' />
+            <FormInput placeholder='No de identificación' />
+            <FormInput placeholder='Nombre del producto' />
+            <FormInput placeholder='Fecha de inicio' />
+            <FormInput placeholder='Fecha final' />
+            <FormInput placeholder='Proyecto' />
+            </div>
+            <div className="formulario-der">
+            <FormInput type='text' />
+            <FormInput type='number' />
+            <FormInput type='text' />
+            <FormInput type='date' />
+            <FormInput type='date' />
+            <FormInput type='text' />
+            </div>
+            </div>
             <BotonPequeño
             texto='Buscar'
             link={'/reportesdos'} />
