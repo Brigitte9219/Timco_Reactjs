@@ -41,7 +41,7 @@ function SolicitarUno(){
             filas='10' />
             <BotonPequeño
             texto='Enviar'
-            link={'/solicitaruno'} />
+            link={'/solicitardos'} />
             <PieDePagina />
         </div>
     );

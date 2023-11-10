@@ -7,7 +7,7 @@
 .cajon{
     display:flex;
     justify-content: center;
-    margin-bottom: 30px;
+    margin-bottom: 13px;
 }
 .boton{
     color: black;
@@ -15,7 +15,7 @@
     font-weight: bold;
     border: 3px solid black;
     box-shadow: 4px 4px 2px 0px;
-    padding: 5px 10px;
+    padding: 10px 10px;
     width: 500px;
     background-color: rgb(187, 184, 184);
     cursor: pointer;
