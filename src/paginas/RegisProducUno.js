@@ -16,36 +16,42 @@ function RegisProducUno(){
             titulo='Registrar' />
             <Texto
             descripcion='A continuación, registre los datos del producto que ingresa a la compañía' />
+            <div className="contenedor-formulario">
+            <div className="formulario-izq">
             <FormInput
             type='text'
             placeholder='Nombre completo' />
             <FormInput
             type='text'
-            placeholder='Código interno ' />
-            <FormInput
-            type='text'
             placeholder='Marca' />
-            <FormInput
-            type='text'
-            placeholder='Serie' />
             <FormInput
             type='date'
             placeholder='Fecha de fabricación' />
             <FormInput
             type='text'
-            placeholder='Referencia' />
+            placeholder='Lote' />
+            <FormInput
+            type='number'
+            placeholder='Cantidad' />
+            </div>
+            <div className="formulario-der">
             <FormInput
             type='text'
-            placeholder='Lote' />
+            placeholder='Código interno ' />
+            <FormInput
+            type='text'
+            placeholder='Serie' />
+            <FormInput
+            type='text'
+            placeholder='Referencia' />
             <FormInput
             type='text'
             placeholder='Norma técnica' />
             <FormInput
-            type='number'
-            placeholder='Cantidad' />
-            <FormInput
             type='text'
             placeholder='Proveedor' />
+            </div>
+            </div>
             <BotonPequeño
             texto='Guardar'
             link={'/regisproducdos'} />
