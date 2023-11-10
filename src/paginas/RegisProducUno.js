@@ -47,7 +47,8 @@ function RegisProducUno(){
             type='text'
             placeholder='Proveedor' />
             <BotonPequeño
-            texto='Guardar' />
+            texto='Guardar'
+            link={'/regisproducdos'} />
             <PieDePagina />
         </div>
     );
