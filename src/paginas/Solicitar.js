@@ -14,7 +14,13 @@ function Solicitar(){
             <TituloPrincipal
             titulo='SOLICITAR PRODUCTOS' />
             <Texto
-            descripcion='Este módulo le permitirá realizar la solicitud de los productos que necesite para que pueda desarrollar su actividad de forma segura' />
+            descripcion='Este módulo le permitirá realizar la' />
+            <Texto
+            descripcion='solicitud de los productos que' />
+            <Texto
+            descripcion='necesite para que pueda desarrollar' />
+            <Texto
+            descripcion='su actividad de forma segura' /><br />
             <BotonPequeño
             texto='Solicitar'
             link={'/Solicitaruno'} />

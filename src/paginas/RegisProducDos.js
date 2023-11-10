@@ -11,7 +11,7 @@ function CuentaTres(){
             <EncabezadoSecundario />
             <MenuSecundario />
             <CajonTexto
-            descripcion='SEl proceso de registro ha terminado de manera exitosa' />
+            descripcion='El proceso de registro ha terminado de manera exitosa' />
             <Enlace
             texto='Enviar otra respuesta'
             link={'/regisproducuno'} />
