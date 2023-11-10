@@ -32,7 +32,7 @@ function CuentaDos(){
             placeholder='Celular' />
             </div>
             </div>
-            <FormCheckbox />
+            <FormCheckbox /><br /><br />
             <BotonPequeño
             texto='Crear'
             link={'/cuentatres'} />
