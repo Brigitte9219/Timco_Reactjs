@@ -11,6 +11,7 @@ import RegisProducUno from './paginas/RegisProducUno';
 import RegisTrabajDos from './paginas/RegisTrabajDos';
 import RegisTrabajTres from './paginas/RegisTrabajTres';
 import RegisTrabajUno from './paginas/RegisTrabajUno';
+import Solicitar from './paginas/Solicitar';
 import Trabajadores from './paginas/Trabajadores';
 import Usuarios from './paginas/Usuarios';
 
@@ -32,6 +33,7 @@ function App() {
         <Route path="/registrabajtres" element={<RegisTrabajTres />} />
         <Route path="/productos" element={<Productos />} />
         <Route path="/regisproducuno" element={<RegisProducUno />} />
+        <Route path="/solicitar" element={<Solicitar />} />
       </Routes>
       </Router>
     </div>

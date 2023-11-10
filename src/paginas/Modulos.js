@@ -22,7 +22,8 @@ function Modulos(){
             texto='Información de los productos'
             link={'/productos'}  />
             <Boton
-            texto='Solicitar productos' />
+            texto='Solicitar productos'
+            link={'/solicitar'}  />
             <Boton
             texto='Asignar productos' />
             <Boton
