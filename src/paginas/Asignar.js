@@ -14,7 +14,15 @@ function Asignar(){
             <TituloPrincipal
             titulo='ASIGNAR PRODUCTOS' />
             <Texto
-            descripcion='Este módulo le permitirá realizar la asignación de productos para que el personal pueda desarrollar su actividad de forma segura' />
+            descripcion='Este módulo le permitirá realizar la' />
+            <Texto
+            descripcion='asignación de productos para que el' />
+            <Texto
+            descripcion='personal pueda desarrollar su' />
+            <Texto
+            descripcion='actividad de forma segura' />
+            <br />
+            <br />
             <BotonPequeño
             texto='Asignar'
             link={'/asignaruno'} />
