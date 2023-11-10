@@ -29,7 +29,7 @@ function CuentaDos(){
             <FormCheckbox />
             <BotonPequeño
             texto='Crear'
-            link='' />
+            link={'/cuentatres'} />
             <PieDePagina />
         </div>
     );

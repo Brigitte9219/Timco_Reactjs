@@ -4,6 +4,7 @@ import Asignar from './paginas/Asignar';
 import AsignarUno from './paginas/AsignarUno';
 import Contacto from './paginas/Contacto';
 import CuentaDos from './paginas/CuentaDos';
+import CuentaTres from './paginas/CuentaTres';
 import CuentaUno from './paginas/CuentaUno';
 import Inicio from './paginas/Inicio';
 import Modulos from './paginas/Modulos';
@@ -32,6 +33,7 @@ function App() {
         <Route path="/usuarios" element={<Usuarios />} />
         <Route path="/cuentauno" element={<CuentaUno />} />
         <Route path="/cuentados" element={<CuentaDos />} />
+        <Route path="/cuentatres" element={<CuentaTres />} />
         <Route path="/trabajadores" element={<Trabajadores />} />
         <Route path="/registrabajuno" element={<RegisTrabajUno />} />
         <Route path="/registrabajdos" element={<RegisTrabajDos />} />
