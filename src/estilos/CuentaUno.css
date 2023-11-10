@@ -1,0 +1,14 @@
+.contenedor-formulario{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-right: 300px;
+    margin-left: 300px;
+}
+.formulario-izq{
+    width: 100%;
+}
+.formulario-der{
+    width: 100%;
+}
