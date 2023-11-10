@@ -1,0 +1,11 @@
+.caja-grande{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.caja-izq{
+    width: 20%;
+}
+.caja-der{
+    width: 20%;
+}
