@@ -41,7 +41,7 @@ function AsignarUno(){
     filas='10' />
     <BotonPequeño
     texto='Enviar'
-    link={'/asignaruno'} />
+    link={'/asignardos'} />
     <PieDePagina />
 </div>
     );

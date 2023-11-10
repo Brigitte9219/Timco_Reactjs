@@ -1,6 +1,7 @@
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import './App.css';
 import Asignar from './paginas/Asignar';
+import AsignarDos from './paginas/AsignarDos';
 import AsignarUno from './paginas/AsignarUno';
 import Contacto from './paginas/Contacto';
 import CuentaDos from './paginas/CuentaDos';
@@ -50,6 +51,7 @@ function App() {
         <Route path="/solicitardos" element={<SolicitarDos />} />
         <Route path="/asignar" element={<Asignar />} />
         <Route path="/asignaruno" element={<AsignarUno />} />
+        <Route path="/asignardos" element={<AsignarDos />} />
         <Route path="/reportes" element={<Reportes />} />
         <Route path="/reportesuno" element={<ReportesUno />} />
       </Routes>
