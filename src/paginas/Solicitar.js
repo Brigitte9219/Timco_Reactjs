@@ -17,7 +17,7 @@ function Solicitar(){
             descripcion='Este módulo le permitirá realizar la solicitud de los productos que necesite para que pueda desarrollar su actividad de forma segura' />
             <BotonPequeño
             texto='Solicitar'
-            link={'/Solicitar'} />
+            link={'/Solicitaruno'} />
             <PieDePagina />
         </div>
     );
