@@ -14,18 +14,24 @@ function CuentaDos(){
             <MenuSecundario />
             <TituloPrincipal
             titulo='Crear cuenta' />
+            <div className="contenedor-formulario">
+            <div className="formulario-izq">
             <FormInput
             type='text'
             placeholder='Género' />
             <FormInput
             type='date'
             placeholder='Fecha de nacimiento' />
+            </div>
+            <div className="formulario-der">
             <FormInput
             type='email'
             placeholder='Correo de recuperación' />
             <FormInput
             type='number'
             placeholder='Celular' />
+            </div>
+            </div>
             <FormCheckbox />
             <BotonPequeño
             texto='Crear'
