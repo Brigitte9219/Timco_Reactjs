@@ -4,6 +4,7 @@ import Asignar from './paginas/Asignar';
 import AsignarDos from './paginas/AsignarDos';
 import AsignarUno from './paginas/AsignarUno';
 import Contacto from './paginas/Contacto';
+import ContactoUno from './paginas/ContactoUno';
 import CuentaDos from './paginas/CuentaDos';
 import CuentaTres from './paginas/CuentaTres';
 import CuentaUno from './paginas/CuentaUno';
@@ -34,6 +35,7 @@ function App() {
         <Route path="/" element={<Inicio />} />
         <Route path="/modulos" element={<Modulos />} />
         <Route path="/contacto" element={<Contacto />} />
+        <Route path="/contactouno" element={<ContactoUno />} />
         <Route path="/pqrsf" element={<Pqrsf />} />
         <Route path="/usuarios" element={<Usuarios />} />
         <Route path="/cuentauno" element={<CuentaUno />} />

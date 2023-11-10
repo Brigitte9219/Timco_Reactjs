@@ -33,7 +33,8 @@ function Modulos(){
             <Texto
             descripcion='A continuación puede adjuntar cualquier archivo que considere para complementar. Tenga en cuenta: La persona encargada se comunicará con usted con los datos diligenciados en este formulario.' />
             <BotonPequeño
-            texto='Enviar' />
+            texto='Enviar'
+            link={'/contactouno'} />
             <PieDePagina />
         </div>
     );
