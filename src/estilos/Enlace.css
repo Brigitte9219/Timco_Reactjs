@@ -4,12 +4,12 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     box-sizing: border-box;
 }
-.cajon-link{
+.link{
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
 }
-.boto{
+.bot{
     font-size: 15px;
     color:rgb(40, 150, 227);
     font-weight: 200;

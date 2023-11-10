@@ -18,6 +18,7 @@ import RegisTrabajDos from './paginas/RegisTrabajDos';
 import RegisTrabajTres from './paginas/RegisTrabajTres';
 import RegisTrabajUno from './paginas/RegisTrabajUno';
 import Reportes from './paginas/Reportes';
+import ReportesDos from './paginas/ReportesDos';
 import ReportesUno from './paginas/ReportesUno';
 import Solicitar from './paginas/Solicitar';
 import SolicitarDos from './paginas/SolicitarDos';
@@ -54,6 +55,7 @@ function App() {
         <Route path="/asignardos" element={<AsignarDos />} />
         <Route path="/reportes" element={<Reportes />} />
         <Route path="/reportesuno" element={<ReportesUno />} />
+        <Route path="/reportesdos" element={<ReportesDos />} />
       </Routes>
       </Router>
     </div>

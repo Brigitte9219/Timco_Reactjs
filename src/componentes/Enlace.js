@@ -4,8 +4,8 @@ import '../estilos/Enlace.css';
 
 function Enlace(props){
     return(
-        <div className="cajon-link">
-            <Link to={props.link} className='boto' >{ props.texto }</Link>
+        <div className="link">
+            <Link to={props.link} className='bot' >{ props.texto }</Link>
         </div>
     );
 }
