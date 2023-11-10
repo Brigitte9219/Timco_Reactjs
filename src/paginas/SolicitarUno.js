@@ -40,7 +40,8 @@ function SolicitarUno(){
             columnas='50'
             filas='10' />
             <BotonPequeño
-            texto='Enviar' />
+            texto='Enviar'
+            link={'/solicitaruno'} />
             <PieDePagina />
         </div>
     );

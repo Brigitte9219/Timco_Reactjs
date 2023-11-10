@@ -25,7 +25,8 @@ function Modulos(){
             texto='Solicitar productos'
             link={'/solicitar'}  />
             <Boton
-            texto='Asignar productos' />
+            texto='Asignar productos'
+            link={'/asignar'} />
             <Boton
             texto='Gestionar reportes e informes' />
             <PieDePagina />
