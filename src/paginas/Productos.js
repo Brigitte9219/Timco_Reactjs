@@ -18,7 +18,7 @@ function Productos(){
             descripcion='Este módulo le permitirá administrar información de los productos de la compañía.' />
             <BotonPequeño
             texto='Registrar'
-            link={'/Productos'} />
+            link={'/RegisProducUno'} />
             <Boton
             texto='Base de datos productos' />
             <PieDePagina />

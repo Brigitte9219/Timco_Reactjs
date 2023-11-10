@@ -7,6 +7,7 @@ import Inicio from './paginas/Inicio';
 import Modulos from './paginas/Modulos';
 import Pqrsf from './paginas/Pqrsf';
 import Productos from './paginas/Productos';
+import RegisProducUno from './paginas/RegisProducUno';
 import RegisTrabajDos from './paginas/RegisTrabajDos';
 import RegisTrabajTres from './paginas/RegisTrabajTres';
 import RegisTrabajUno from './paginas/RegisTrabajUno';
@@ -30,6 +31,7 @@ function App() {
         <Route path="/registrabajdos" element={<RegisTrabajDos />} />
         <Route path="/registrabajtres" element={<RegisTrabajTres />} />
         <Route path="/productos" element={<Productos />} />
+        <Route path="/regisproducuno" element={<RegisProducUno />} />
       </Routes>
       </Router>
     </div>
