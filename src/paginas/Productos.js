@@ -13,12 +13,18 @@ function Productos(){
             <EncabezadoSecundario />
             <MenuSecundario />
             <TituloPrincipal
-            titulo='ADMINISTAR INFORMACIÓN DE LOS PRODUCTOS' />
+            titulo='ADMINISTAR INFORMACIÓN' />
+            <TituloPrincipal
+            titulo='DE LOS PRODUCTOS' />
             <Texto
-            descripcion='Este módulo le permitirá administrar información de los productos de la compañía.' />
+            descripcion='Este módulo le permitirá administrar' />
+            <Texto
+            descripcion='información de los productos de la' />
+            <Texto
+            descripcion='compañía.' /><br />
             <BotonPequeño
             texto='Registrar'
-            link={'/regisproducuno'} />
+            link={'/regisproducuno'} /><br />
             <Boton
             texto='Base de datos productos' />
             <PieDePagina />
