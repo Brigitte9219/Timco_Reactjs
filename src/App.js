@@ -22,6 +22,7 @@ import RegisTrabajUno from './paginas/RegisTrabajUno';
 import Reportes from './paginas/Reportes';
 import ReportesDos from './paginas/ReportesDos';
 import ReportesUno from './paginas/ReportesUno';
+import SesionUno from './paginas/SesionUno';
 import Solicitar from './paginas/Solicitar';
 import SolicitarDos from './paginas/SolicitarDos';
 import SolicitarUno from './paginas/SolicitarUno';
@@ -60,6 +61,7 @@ function App() {
         <Route path="/reportes" element={<Reportes />} />
         <Route path="/reportesuno" element={<ReportesUno />} />
         <Route path="/reportesdos" element={<ReportesDos />} />
+        <Route path="/sesionuno" element={<SesionUno />} />
       </Routes>
       </Router>
     </div>

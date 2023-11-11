@@ -15,7 +15,7 @@ function CuentaTres(){
             descripcion='Su cuenta ha sido creada de manera exitosa' />
             <BotonPequeño
             texto='Ingresar'
-            link={'/sesion1'} />
+            link={'/sesionuno'} />
             <Enlace
             texto='Enviar otra respuesta'
             link={'/cuentauno'} />

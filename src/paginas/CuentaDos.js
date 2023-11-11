@@ -32,7 +32,8 @@ function CuentaDos(){
             placeholder='Celular' />
             </div>
             </div>
-            <FormCheckbox /><br /><br />
+            <FormCheckbox
+            texto='Acepto términos y condiciones' /><br /><br />
             <BotonPequeño
             texto='Crear'
             link={'/cuentatres'} />

@@ -18,6 +18,8 @@ function Pqrsf(){
             titulo='PQRSF' />
             <Texto
             descripcion='Al diligenciar el presente formulario usted autoriza el tratamiento de datos personales. Ver nuestra Política de Tratamiento de Datos Personales' />
+            <div className="contenedor-formulario">
+            <div className="formulario-izq">
             <FormInput
             type='text'
             placeholder='Entidad/Empresa' />
@@ -27,6 +29,8 @@ function Pqrsf(){
             <FormInput
             type='text'
             placeholder='Cargo' />
+            </div>
+            <div className="formulario-der">
             <FormInput
             type='text'
             placeholder='Ciudad' />
@@ -36,6 +40,8 @@ function Pqrsf(){
             <FormInput
             type='email'
             placeholder='Email' />
+            </div>
+            </div>
             <Texto
             descripcion='Por favor seleccione el trámite a realizar:' />
             <ListaDespegable />
