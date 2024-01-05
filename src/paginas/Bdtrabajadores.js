@@ -7,35 +7,49 @@ import TituloPrincipal from "../componentes/TituloPrincipal";
 import PieDePagina from "../componentes/PieDePagina";
 import BotonPequeño from "../componentes/BotonPequeño";
 import '../estilos/Bdtrabajadores.css';
+import Texto from "../componentes/Texto";
 
 function BdTrabajadores(){
 
     const [trabajadores, setTrabajadores] = useState(null)
 
+    const [orden, setOrden] = useState('asc'); // Puede ser 'asc' o 'desc'
+
     useEffect(() => {
         todosTrabajadores(setTrabajadores);
     }, []);
+
+    const handleSort = (columna) => {
+        const nuevosTrabajadores = [...trabajadores];
+        nuevosTrabajadores.sort((a, b) => {
+            const factorOrden = (orden === 'asc') ? 1 : -1;
+            return factorOrden * (a[columna] - b[columna]);
+        });
+        setTrabajadores(nuevosTrabajadores);
+        setOrden(orden === 'asc' ? 'desc' : 'asc');
+    };
 
     return(
         <div>
             <EncabezadoSecundario />
             <MenuSecundario />
             <TituloPrincipal
-            titulo='BASE DE DATOS' />
-            <TituloPrincipal
-            titulo='COLABORADORES' />
-            
+            titulo='BASE DE DATOS COLABORADORES' />
+            <Texto
+            descripcion='A continuación, los datos de los trabajadores
+            del más reciente al más antiguo y en caso de querer ordenarlos de 
+            forma ascendente de click sobre "Id" ubicada en la parte izquierda de la pantalla.' />
             <table className="tabla-container">
                 <thead>
                     <tr>
-                        <td colSpan={25}><b>Datos personales</b></td>
-                        <td colSpan={4}><b>Tallas</b></td>
-                        <td colSpan={4}><b>En caso de emergencia</b></td>
+                        <td colSpan={25}><b>DATOS PERSONALES</b></td>
+                        <td colSpan={4}><b>TALLAS</b></td>
+                        <td colSpan={4}><b>EN CASO DE EMERGENCIA</b></td>
                     </tr>
                 </thead>
                 <thead>
                     <tr>
-                        <td>Id</td>
+                        <td onClick={() => handleSort('idTrabajador')}>Id</td>
                         <td>Nombre trabajador</td>
                         <td>Correo Electrónico</td>
                         <td>Tipo Id</td>
@@ -68,8 +82,6 @@ function BdTrabajadores(){
                         <td>Parentesco</td>
                         <td>Teléfono Móvil</td>
                         <td>Teléfono fijo</td>
-                        <td></td>
-                        <td></td>
                     </tr>
                 </thead>
                 <tbody>
@@ -110,6 +122,9 @@ function BdTrabajadores(){
                         <td> {trabajador.parentescoEmergencia} </td>
                         <td> {trabajador.movilEmergencia} </td>
                         <td> {trabajador.fijoEmergencia} </td>
+
+                        <td><button>Editar</button></td>
+                        <td><button>Eliminar</button></td>
                     </tr>
                 ))}      
                 </tbody>

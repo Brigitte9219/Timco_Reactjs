@@ -1,16 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+}
 .tabla-container {
     margin: 20px;
   }
   
-  table {
+table {
     width: 100%;
     border-collapse: collapse;
-    border: 1px solid #ddd;
-  }
-  
-  td {
-    border: 1px solid #ddd;
+    border: 1px solid #dddddd;
+    }
+td {
+    border: 1px solid orange;
     padding: 8px;
     text-align: center;
+    font-size: 20px;
+  }
+  td:hover{
+    background-color: orange;
+    color:white;
+  }
+button{
+    font-size: 20px;
   }
   
+thead{
+    font-weight: 600;
+    font-size: 20px;
+  }
