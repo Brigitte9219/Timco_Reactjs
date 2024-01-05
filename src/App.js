@@ -28,6 +28,7 @@ import SolicitarDos from './paginas/SolicitarDos';
 import SolicitarUno from './paginas/SolicitarUno';
 import Trabajadores from './paginas/Trabajadores';
 import Usuarios from './paginas/Usuarios';
+import BdTrabajadores from './paginas/Bdtrabajadores';
 
 function App() {
   return (
@@ -62,6 +63,7 @@ function App() {
         <Route path="/reportesuno" element={<ReportesUno />} />
         <Route path="/reportesdos" element={<ReportesDos />} />
         <Route path="/sesionuno" element={<SesionUno />} />
+        <Route path="/bdtrabajadores" element={<BdTrabajadores />} />
       </Routes>
       </Router>
     </div>

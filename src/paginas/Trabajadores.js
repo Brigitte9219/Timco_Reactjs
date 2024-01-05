@@ -26,7 +26,7 @@ function Trabajadores(){
             link={'/RegisTrabajUno'}
             texto='Registrar' /><br />
             <Boton
-            link=''
+            link={'/bdtrabajadores'}
             texto='Base de datos colaboradores' />
             <PieDePagina />
         </div>
