@@ -29,6 +29,7 @@ import SolicitarUno from './paginas/SolicitarUno';
 import Trabajadores from './paginas/Trabajadores';
 import Usuarios from './paginas/Usuarios';
 import BdTrabajadores from './paginas/Bdtrabajadores';
+import BdProductos from './paginas/Bdproductos';
 
 function App() {
   return (
@@ -64,6 +65,7 @@ function App() {
         <Route path="/reportesdos" element={<ReportesDos />} />
         <Route path="/sesionuno" element={<SesionUno />} />
         <Route path="/bdtrabajadores" element={<BdTrabajadores />} />
+        <Route path="/bdproductos" element={<BdProductos />} />
       </Routes>
       </Router>
     </div>

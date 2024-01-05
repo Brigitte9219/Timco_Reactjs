@@ -7,7 +7,6 @@ import TituloPrincipal from "../componentes/TituloPrincipal";
 import PieDePagina from "../componentes/PieDePagina";
 import BotonPequeño from "../componentes/BotonPequeño";
 import '../estilos/Bdtrabajadores.css';
-import Texto from "../componentes/Texto";
 
 function BdTrabajadores(){
 
@@ -35,10 +34,6 @@ function BdTrabajadores(){
             <MenuSecundario />
             <TituloPrincipal
             titulo='BASE DE DATOS COLABORADORES' />
-            <Texto
-            descripcion='A continuación, los datos de los trabajadores
-            del más reciente al más antiguo y en caso de querer ordenarlos de 
-            forma ascendente de click sobre "Id" ubicada en la parte izquierda de la pantalla.' />
             <table className="tabla-container">
                 <thead>
                     <tr>

@@ -26,7 +26,8 @@ function Productos(){
             texto='Registrar'
             link={'/regisproducuno'} /><br />
             <Boton
-            texto='Base de datos productos' />
+            texto='Base de datos productos' 
+            link={'/bdproductos'} />
             <PieDePagina />
         </div>
     );
