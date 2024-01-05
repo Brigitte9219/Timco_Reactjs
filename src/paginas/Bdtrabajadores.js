@@ -6,6 +6,7 @@ import MenuSecundario from "../componentes/MenuSecundario";
 import TituloPrincipal from "../componentes/TituloPrincipal";
 import PieDePagina from "../componentes/PieDePagina";
 import BotonPequeño from "../componentes/BotonPequeño";
+import '../estilos/Bdtrabajadores.css';
 
 function BdTrabajadores(){
 
@@ -23,50 +24,99 @@ function BdTrabajadores(){
             titulo='BASE DE DATOS' />
             <TituloPrincipal
             titulo='COLABORADORES' />
+            
+            <table className="tabla-container">
+                <thead>
+                    <tr>
+                        <td colSpan={25}><b>Datos personales</b></td>
+                        <td colSpan={4}><b>Tallas</b></td>
+                        <td colSpan={4}><b>En caso de emergencia</b></td>
+                    </tr>
+                </thead>
+                <thead>
+                    <tr>
+                        <td>Id</td>
+                        <td>Nombre trabajador</td>
+                        <td>Correo Electrónico</td>
+                        <td>Tipo Id</td>
+                        <td>Número Id</td>
+                        <td>Fecha de expedición</td>
+                        <td>Ciudad de expedición</td>
+                        <td>Fecha de nacimiento</td>
+                        <td>Lugar de nacimiento</td>
+                        <td>Edad</td>
+                        <td>Estatura</td>
+                        <td>Género</td>
+                        <td>Estado civil</td>
+                        <td>RH</td>
+                        <td>Grupo sanguíneo</td>
+                        <td>Localidad</td>
+                        <td>Ciudad de residencia</td>
+                        <td>Barrio</td>
+                        <td>Dirección</td>
+                        <td>Teléfono Móvil</td>
+                        <td>Teléfono fijo</td>
+                        <td>EPS</td>
+                        <td>Fondo de pensiones</td>
+                        <td>Escolaridad</td>
+                        <td>Profesión</td>
+                        <td>Talla camisa</td>
+                        <td>Talla pantalón</td>
+                        <td>Talla chaqueta</td>
+                        <td>Talla calzado</td>
+                        <td>Nombre completo</td>
+                        <td>Parentesco</td>
+                        <td>Teléfono Móvil</td>
+                        <td>Teléfono fijo</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </thead>
+                <tbody>
+                {trabajadores && trabajadores.map(trabajador => (
+                    <tr key={trabajador.idTrabajador}>
+                        <td> {trabajador.idTrabajador} </td>
+                        <td> {trabajador.nombre} </td>
+                        <td> {trabajador.correo} </td>
+                        <td> {trabajador.tipoId} </td>
+                        <td> {trabajador.numeroId} </td>
+                        <td> {trabajador.fechaExpedicion} </td>
+                        <td> {trabajador.ciudadExpedicion} </td>
+                        <td> {trabajador.fechaNacimiento} </td>
+                        <td> {trabajador.lugarNacimiento} </td>
+                        <td> {trabajador.edad} </td>
+                        <td> {trabajador.estatura} </td>
+                        <td> {trabajador.genero} </td>
+                        <td> {trabajador.estadoCivil} </td>
+                        
+                        <td> {trabajador.rh} </td>
+                        <td> {trabajador.grupoSanguineo} </td>
+                        <td> {trabajador.localidad} </td>
+                        <td> {trabajador.ciudadResidencia} </td>
+                        <td> {trabajador.barrio} </td>
+                        <td> {trabajador.direccion} </td>
+                        <td> {trabajador.telefonoMovil} </td>
+                        <td> {trabajador.telefonoFijo} </td>
+                        <td> {trabajador.eps} </td>
+                        <td> {trabajador.afp} </td>
+                        <td> {trabajador.escolaridad} </td>
+                        <td> {trabajador.profesion} </td>
+
+                        <td> {trabajador.tallaCamisa} </td>
+                        <td> {trabajador.tallaPantalon} </td>
+                        <td> {trabajador.tallaChaqueta} </td>
+                        <td> {trabajador.tallaCalzado} </td>
+                        <td> {trabajador.nombreEmergencia} </td>
+                        <td> {trabajador.parentescoEmergencia} </td>
+                        <td> {trabajador.movilEmergencia} </td>
+                        <td> {trabajador.fijoEmergencia} </td>
+                    </tr>
+                ))}      
+                </tbody>
+            </table>
 
             <>
-            {trabajadores != null? (
-                trabajadores.map(trabajador => (
-                    <div key={trabajador.idTrabajador}>
-                        <p> {trabajador.idTrabajador} </p>
-                        <p> {trabajador.nombre} </p>
-                        <p> {trabajador.correo} </p>
-                        <p> {trabajador.tipoId} </p>
-                        <p> {trabajador.numeroId} </p>
-                        <p> {trabajador.fechaExpedicion} </p>
-                        <p> {trabajador.ciudadExpedicion} </p>
-                        <p> {trabajador.fechaNacimiento} </p>
-                        <p> {trabajador.lugarNacimiento} </p>
-                        <p> {trabajador.edad} </p>
-                        <p> {trabajador.estatura} </p>
-                        <p> {trabajador.genero} </p>
-                        <p> {trabajador.estadoCivil} </p>
-
-                        <p> {trabajador.rh} </p>
-                        <p> {trabajador.grupoSanguineo} </p>
-                        <p> {trabajador.localidad} </p>
-                        <p> {trabajador.ciudadResidencia} </p>
-                        <p> {trabajador.barrio} </p>
-                        <p> {trabajador.direccion} </p>
-                        <p> {trabajador.telefonoMovil} </p>
-                        <p> {trabajador.telefonoFijo} </p>
-                        <p> {trabajador.eps} </p>
-                        <p> {trabajador.afp} </p>
-                        <p> {trabajador.escolaridad} </p>
-                        <p> {trabajador.profesion} </p>
-
-                        <p> {trabajador.tallaCamisa} </p>
-                        <p> {trabajador.tallaPantalon} </p>
-                        <p> {trabajador.tallaChaqueta} </p>
-                        <p> {trabajador.tallaCalzado} </p>
-
-                        <p> {trabajador.nombreEmergencia} </p>
-                        <p> {trabajador.parentescoEmergencia} </p>
-                        <p> {trabajador.movilEmergencia} </p>
-                        <p> {trabajador.fijoEmergencia} </p>
-                    </div>
-                ))
-            ) : ('No hay trabajadores')}
+            {trabajadores != null? ("") : ('No hay trabajadores')}
             </>
 
             <BotonPequeño
