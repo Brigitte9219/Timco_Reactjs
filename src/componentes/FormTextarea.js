@@ -10,6 +10,10 @@ function FormTextarea(props){
                 placeholder={ props.placeholder }
                 cols={ props.columnas }
                 rows={ props.filas }
+                type={props.type}
+                name={props.name}  // Agrega el atributo name
+                value={props.value} // Usa el valor pasado por props
+                onChange={props.onChange} // Maneja el cambio de valor
                 />
             </form>
         </div>
