@@ -12,6 +12,7 @@ const RegisProducUno = () => {
 
     const navigate = useNavigate(); // Cambia de useHistory a useNavigate
 
+    //Almacena los datos del formulario
     const [formData, setFormData] = useState({
         nombre:"",
         codigoInterno:"",

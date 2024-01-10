@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import BotonPequeño from "../componentes/BotonPequeño";
 import EncabezadoSecundario from "../componentes/EncabezadoSecundario";
 import FormInput from "../componentes/FormInput";
@@ -7,8 +7,17 @@ import MenuSecundario from "../componentes/MenuSecundario";
 import PieDePagina from "../componentes/PieDePagina";
 import Texto from "../componentes/Texto";
 import TituloPrincipal from "../componentes/TituloPrincipal";
+import { useNavigate } from "react-router-dom";
 
-function SolicitarUno(){
+const SolicitarUno = () => {
+
+    const navigate = useNavigate();
+
+    //Almacenar los datos del formulario
+    const [formData, setFormData] = useState({
+
+    })
+
     return(
         <div>
             <EncabezadoSecundario />
@@ -23,16 +32,23 @@ function SolicitarUno(){
             type='date'
             placeholder='Fecha de solicitud' />
             <FormInput
-            type='number'
-            placeholder='Cantidad' />
+            type='text'
+            placeholder='Nombre del producto' />
+            <FormInput
+            type='text'
+            placeholder='Talla' />
             <FormInput
             type='text'
             placeholder='Proyecto' />
             </div>
+
             <div className="formulario-izq">
             <FormInput
             type='text'
-            placeholder='Nombre del producto' />
+            placeholder='Nombre del trabajador' />
+            <FormInput
+            type='number'
+            placeholder='Cantidad' />
             <FormInput
             type='text'
             placeholder='Actividad a realizar' />
