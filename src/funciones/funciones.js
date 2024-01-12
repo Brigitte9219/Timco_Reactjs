@@ -17,6 +17,12 @@ const todosProductos = async (state) => {
 }
 
 //Consultar todas las solicitudes
+const todosSolicitudes = async (state) => {
+    const peticion = await axios.get('http://localhost:8080/solicitud');
+    //Muestra los datos de todos los productos en consola
+    console.log(peticion.data);
+    state(peticion.data);
+}
 
 //Consultar todas las asignaciones
 
