@@ -36,6 +36,18 @@ const Contacto = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
+        //Validación de campos obligatorios
+        if (
+            !formData.nombre ||
+            !formData.correo ||
+            !formData.asunto ||
+            !formData.mensaje
+        ) {
+            // Si falta algún campo, muestra una alerta al usuario
+            alert("Por favor, complete todos los campos obligatorios.");
+            return;
+        }
+
         try {
             console.log("Enviando formulario:", formData);
 
@@ -52,6 +64,9 @@ const Contacto = () => {
         if (response.ok) {
             // Realizar acciones después del éxito
             console.log("Solicitud POST exitosa");
+
+            //Alerta que se muestra al usuario
+            alert('El mensaje ha sido enviado de manera exitosa');
 
             // Obtén el ID del trabajador de la respuesta (ajusta según la estructura de tu respuesta)
             //const { idTrabajador } = await response.json();

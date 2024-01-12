@@ -40,6 +40,26 @@ const Pqrsf = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
+        if(
+            !formData.nombre ||
+            !formData.empresa ||
+            !formData.cargo ||
+            !formData.ciudad ||
+            !formData.celular ||
+            !formData.correo ||  
+            !formData.tramite ||           
+            !formData.mensaje 
+        ) {
+            alert('Por favor, complete todos los campos obligatorios');
+            return;
+        }
+
+        //Valida la seleccion de la lista desplegable
+        if (formData.tramite === '') {
+            alert('Por favor, selecciona una opción');
+            return;
+          }
+
         try {
             console.log("Enviando formulario:", formData);
 
@@ -56,6 +76,9 @@ const Pqrsf = () => {
         if (response.ok) {
             // Realizar acciones después del éxito
             console.log("Solicitud POST exitosa");
+
+            // Mostrar alerta al usuario
+            alert("Su solicitud ha sido radicada exitosamente.");
 
             // Obtén el ID del trabajador de la respuesta (ajusta según la estructura de tu respuesta)
             //const { idTrabajador } = await response.json();
@@ -124,7 +147,10 @@ const Pqrsf = () => {
             
             <Texto
             descripcion='Por favor seleccione el trámite a realizar:' />
-            <ListaDespegable />
+            <ListaDespegable
+            name='tramite'
+            value={formData.tramite}
+            onChange={handleChange} />
             <FormTextarea
             placeholder='Mensaje'
             columnas='50'

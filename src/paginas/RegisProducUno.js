@@ -40,6 +40,24 @@ const RegisProducUno = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    //Validación de campos obligatorios
+    if (
+      !formData.nombre ||
+      !formData.codigoInterno ||
+      !formData.marca ||
+      !formData.serie ||
+      !formData.fechaFabricacion ||
+      !formData.referencia ||
+      !formData.lote ||
+      !formData.normaTecnica ||
+      !formData.cantidad ||
+      !formData.proveedor
+  ) {
+      // Si falta algún campo, muestra una alerta al usuario
+      alert("Por favor, complete todos los campos obligatorios.");
+      return;
+  }
+
     try {
         console.log("Enviando formulario:", formData);
 
@@ -56,6 +74,9 @@ const RegisProducUno = () => {
       if (response.ok) {
         // Realizar acciones después del éxito
         console.log("Solicitud POST exitosa");
+
+        //Mostrar una alerta al usuario
+        alert('El proceso de registro ha terminado de manera exitosa.');
 
         // Obtén el ID del trabajador de la respuesta (ajusta según la estructura de tu respuesta)
         //const { idTrabajador } = await response.json();

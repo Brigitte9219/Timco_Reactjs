@@ -40,6 +40,19 @@ const AsignarUno = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
+        if(
+            !formData.fechaAsignacion ||
+            !formData.nombreTrabajador ||
+            !formData.nombreProducto ||
+            !formData.proyecto ||
+            !formData.talla ||
+            !formData.cantidad || 
+            !formData.area
+        ){
+            alert("Por favor, complete todos los campos obligatorios.");
+            return;
+        }
+
         try {
             console.log("Enviando formulario:", formData);
 
@@ -56,6 +69,9 @@ const AsignarUno = () => {
         if (response.ok) {
             // Realizar acciones después del éxito
             console.log("Solicitud POST exitosa");
+            
+            //Alerta para el usuario
+            alert('La asignación se ha realizado de manera exitosa.');
 
             // Obtén el ID del trabajador de la respuesta (ajusta según la estructura de tu respuesta)
             //const { idTrabajador } = await response.json();

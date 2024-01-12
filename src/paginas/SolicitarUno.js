@@ -41,6 +41,22 @@ const SolicitarUno = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
+        // Validación de campos obligatorios
+        if (
+            !formData.fechaSolicitud ||
+            !formData.nombreTrabajador ||
+            !formData.nombreProducto ||
+            !formData.cantidad ||
+            !formData.talla ||
+            !formData.actividad ||
+            !formData.proyecto ||
+            !formData.area
+        ) {
+            // Si falta algún campo, muestra una alerta al usuario
+            alert("Por favor, complete todos los campos obligatorios.");
+            return;
+        }
+
         try {
             console.log("Enviando formulario:", formData);
 
@@ -57,6 +73,9 @@ const SolicitarUno = () => {
         if (response.ok) {
             // Realizar acciones después del éxito
             console.log("Solicitud POST exitosa");
+
+            //Mostrar un mensaje al usuario
+            alert('La solicitud se ha realizado de manera exitosa.');
 
             // Obtén el ID del trabajador de la respuesta (ajusta según la estructura de tu respuesta)
             //const { idTrabajador } = await response.json();
