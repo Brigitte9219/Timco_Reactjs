@@ -39,15 +39,8 @@ function BdProductos(){
                     <tr>
                         <td onClick={() => handleSort('idProducto')}>Id</td>
                         <td>Nombre producto</td>
-                        <td>Código interno</td>
-                        <td>Marca</td>
-                        <td>Serie</td>
-                        <td>Fecha de fabricación</td>
-                        <td>Referencia</td>
-                        <td>Lote</td>
-                        <td>Norma técnica</td>
-                        <td>Cantidad</td>
-                        <td>Proveedor</td>
+                        <td>Código interno</td>                        
+                        <td>Cantidad</td>                        
                     </tr>
                 </thead>
                 <tbody>
@@ -55,15 +48,8 @@ function BdProductos(){
                     <tr key={producto.idProducto}>
                         <td> {producto.idProducto} </td>
                         <td> {producto.nombre} </td>
-                        <td> {producto.codigoInterno} </td>
-                        <td> {producto.marca} </td>
-                        <td> {producto.serie} </td>
-                        <td> {producto.fechaFabricacion} </td>
-                        <td> {producto.referencia} </td>
-                        <td> {producto.lote} </td>
-                        <td> {producto.normaTecnica} </td>
-                        <td> {producto.cantidad} </td>
-                        <td> {producto.proveedor} </td>
+                        <td> {producto.codigoInterno} </td>                        
+                        <td> {producto.cantidad} </td>                        
                         <td><button>Editar</button></td>
                         <td><button>Eliminar</button></td>
                     </tr>
