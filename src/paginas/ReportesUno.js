@@ -27,7 +27,7 @@ function ReportesUno(){
             link={'/bdsolicitudes'} />
             <Boton
             texto='Asignaciones'
-            link={'/bdasignaciones'} />
+            link={'/bdasignar'} />
             <Boton
             texto='Mensajes - Contacto'
             link={'/bdcontacto'} />

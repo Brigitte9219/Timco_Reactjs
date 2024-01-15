@@ -33,6 +33,7 @@ import BdProductos from './paginas/Bdproductos';
 import Bdsolicitudes from './paginas/Bdsolicitudes';
 import Bdasignar from './paginas/Bdasignar';
 import Bdcontacto from './paginas/Bdcontacto';
+import Bdpqrsf from './paginas/Bdpqrsf';
 
 function App() {
   return (
@@ -72,6 +73,7 @@ function App() {
         <Route path="/bdsolicitudes" element={<Bdsolicitudes />} />
         <Route path='/bdasignar' element={<Bdasignar /> } />
         <Route path='/bdcontacto' element={<Bdcontacto />} />
+        <Route path='/bdpqrsf' element={<Bdpqrsf />} />
       </Routes>
       </Router>
     </div>

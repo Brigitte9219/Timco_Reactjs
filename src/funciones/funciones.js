@@ -44,7 +44,14 @@ const todosContacto = async (state) => {
 }
 
 //Consultar todas las PQRSF
+const todosPqrsf = async (state) => {
+    const peticion = await axios.get('http://localhost:8080/pqrsf');
+    //Muestra los datos de todos los productos en consola
+    console.log(peticion.data);
+    state(peticion.data);
+}
+
 
 export{
-    todosTrabajadores, todosProductos, todosSolicitudes, todosAsignaciones, todosContacto
+    todosTrabajadores, todosProductos, todosSolicitudes, todosAsignaciones, todosContacto, todosPqrsf
 }
