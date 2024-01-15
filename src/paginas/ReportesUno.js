@@ -24,19 +24,16 @@ function ReportesUno(){
             link={'/bdproductos'} />
             <Boton
             texto='Solicitudes'
-            link={'/bdtrabajadores'} />
+            link={'/bdsolicitudes'} />
             <Boton
             texto='Asignaciones'
-            link={'/bdtrabajadores'} />
+            link={'/bdasignaciones'} />
             <Boton
             texto='Mensajes - Contacto'
-            link={'/bdtrabajadores'} />
+            link={'/bdcontacto'} />
             <Boton
             texto='Pqrsf'
-            link={'/bdtrabajadores'} />
-            <Boton
-            texto='Usuarios'
-            link={'/bdtrabajadores'} />
+            link={'/bdpqrsf'} />
             <PieDePagina />
         </div>
     );

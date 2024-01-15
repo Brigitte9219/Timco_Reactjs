@@ -32,6 +32,7 @@ import BdTrabajadores from './paginas/Bdtrabajadores';
 import BdProductos from './paginas/Bdproductos';
 import Bdsolicitudes from './paginas/Bdsolicitudes';
 import Bdasignar from './paginas/Bdasignar';
+import Bdcontacto from './paginas/Bdcontacto';
 
 function App() {
   return (
@@ -69,7 +70,8 @@ function App() {
         <Route path="/bdtrabajadores" element={<BdTrabajadores />} />
         <Route path="/bdproductos" element={<BdProductos />} />
         <Route path="/bdsolicitudes" element={<Bdsolicitudes />} />
-        <Route path='/bdasignar' element={<Bdasignar/> } />
+        <Route path='/bdasignar' element={<Bdasignar /> } />
+        <Route path='/bdcontacto' element={<Bdcontacto />} />
       </Routes>
       </Router>
     </div>
