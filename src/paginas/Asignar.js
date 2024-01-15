@@ -5,6 +5,7 @@ import MenuSecundario from "../componentes/MenuSecundario";
 import PieDePagina from "../componentes/PieDePagina";
 import Texto from "../componentes/Texto";
 import TituloPrincipal from "../componentes/TituloPrincipal";
+import Boton from "../componentes/Boton";
 
 function Asignar(){
     return(
@@ -26,6 +27,9 @@ function Asignar(){
             <BotonPequeño
             texto='Asignar'
             link={'/asignaruno'} />
+            <Boton
+            texto='Base de datos Asignación'
+            link={'/bdasignar'} />
             <PieDePagina />
         </div>
     );

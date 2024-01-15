@@ -33,5 +33,5 @@ const todosSolicitudes = async (state) => {
 //Consultar todas las PQRSF
 
 export{
-    todosTrabajadores, todosProductos
+    todosTrabajadores, todosProductos, todosSolicitudes
 }

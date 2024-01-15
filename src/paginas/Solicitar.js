@@ -5,6 +5,7 @@ import MenuSecundario from "../componentes/MenuSecundario";
 import PieDePagina from "../componentes/PieDePagina";
 import Texto from "../componentes/Texto";
 import TituloPrincipal from "../componentes/TituloPrincipal";
+import Boton from "../componentes/Boton";
 
 function Solicitar(){
     return(
@@ -24,6 +25,9 @@ function Solicitar(){
             <BotonPequeño
             texto='Solicitar'
             link={'/Solicitaruno'} />
+            <Boton
+            texto='Base de datos solicitudes' 
+            link={'/bdsolicitudes'} />
             <PieDePagina />
         </div>
     );

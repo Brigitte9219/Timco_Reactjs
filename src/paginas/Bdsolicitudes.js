@@ -12,13 +12,15 @@ function Bdsolicitudes(){
 
     const [solicitudes, setSolicitudes] = useState(null)
 
+    const [orden, setOrden] = useState('asc'); // Puede ser 'asc' o 'desc'
+
     //const [orden, setOrden] = useState('asc'); // Puede ser 'asc' o 'desc'
 
     useEffect(() => {
         todosSolicitudes(setSolicitudes);
     }, []);
 
-    /*const handleSort = (columna) => {
+    const handleSort = (columna) => {
         const nuevosProductos = [...solicitudes];
         nuevosProductos.sort((a, b) => {
             const factorOrden = (orden === 'asc') ? 1 : -1;
@@ -26,7 +28,7 @@ function Bdsolicitudes(){
         });
         setSolicitudes(nuevosProductos);
         setOrden(orden === 'asc' ? 'desc' : 'asc');
-    };*/
+    };
 
     return(
         <div>
@@ -37,7 +39,7 @@ function Bdsolicitudes(){
             <table>
                 <thead>
                     <tr>
-                        <td>Id</td>
+                        <td onClick={() => handleSort('idSolicitud')}>Id</td>
                         <td>Fecha de solicitud</td>
                         <td>Nombre de trabajador</td>
                         <td>Nombre del producto</td>
@@ -52,16 +54,22 @@ function Bdsolicitudes(){
                 <tbody>
                 {solicitudes && solicitudes.map(solicitud => (
                     <tr key={solicitud.idSolicitud}>
-                        <td> {solicitud.idSolicitud} </td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td>{solicitud.idSolicitud}</td>
+                        <td>{solicitud.fechaSolicitud}</td>
+                        <td>{solicitud.nombreTrabajador}</td>
+                        <td>{solicitud.nombreProducto}</td>
+                        <td>{solicitud.cantidad}</td>
+                        <td>{solicitud.talla}</td>
+                        <td>{solicitud.actividadRealizar}</td>
+                        <td>{solicitud.proyecto}</td>
+                        <td>{solicitud.area}</td>
+                        <td>{solicitud.observaciones}</td>
                     </tr>
                 ))}   
                 </tbody>
             </table>
             <BotonPequeño
-            link={'/productos'}
+            link={'/solicitar'}
             texto='Regresar' />
             <PieDePagina />
 
