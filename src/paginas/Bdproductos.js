@@ -50,7 +50,7 @@ function BdProductos(){
                         <td> {producto.nombre} </td>
                         <td> {producto.codigoInterno} </td>                        
                         <td> {producto.cantidad} </td>                        
-                        <td><button>Editar</button></td>
+                        <td><button>Actualizar</button></td>
                         <td><button>Eliminar</button></td>
                     </tr>
                 ))}      

@@ -49,6 +49,8 @@ function Bdsolicitudes(){
                         <td>Proyecto</td>
                         <td>Área</td>
                         <td>Observaciones</td>
+                        <td></td>
+                        <td></td>
                     </tr>
                 </thead>
                 <tbody>
@@ -64,6 +66,8 @@ function Bdsolicitudes(){
                         <td>{solicitud.proyecto}</td>
                         <td>{solicitud.area}</td>
                         <td>{solicitud.observaciones}</td>
+                        <td><button>Actualizar</button></td>
+                        <td><button>Eliminar</button></td>
                     </tr>
                 ))}   
                 </tbody>

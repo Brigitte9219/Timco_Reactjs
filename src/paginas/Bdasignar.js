@@ -45,6 +45,8 @@ function Bdasignar (){
                         <td>Proyecto</td>
                         <td>Area</td>
                         <td>Observaciones</td>
+                        <td></td>
+                        <td></td>
                     </tr>
                 </thead>
                 <tbody>
@@ -59,6 +61,8 @@ function Bdasignar (){
                         <td> {asignacion.proyecto} </td>
                         <td> {asignacion.area} </td>
                         <td> {asignacion.observaciones} </td>
+                        <td><button>Actualizar</button></td>
+                        <td><button>Eliminar</button></td>
                     </tr>
                 ))}
                 </tbody>
