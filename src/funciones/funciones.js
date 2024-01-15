@@ -25,6 +25,12 @@ const todosSolicitudes = async (state) => {
 }
 
 //Consultar todas las asignaciones
+const todosAsignaciones = async (state) => {
+    const peticion = await axios.get('http://localhost:8080/asignacion');
+    //Muestra los datos de todos los productos en consola
+    console.log(peticion.data);
+    state(peticion.data);
+}
 
 //Consultar todos los reportes o informes
 
@@ -33,5 +39,5 @@ const todosSolicitudes = async (state) => {
 //Consultar todas las PQRSF
 
 export{
-    todosTrabajadores, todosProductos, todosSolicitudes
+    todosTrabajadores, todosProductos, todosSolicitudes, todosAsignaciones
 }
