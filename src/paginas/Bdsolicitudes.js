@@ -60,7 +60,7 @@ function Bdsolicitudes(){
                         <td>{solicitud.nombreProducto}</td>
                         <td>{solicitud.cantidad}</td>
                         <td>{solicitud.talla}</td>
-                        <td>{solicitud.actividadRealizar}</td>
+                        <td>{solicitud.actividad}</td>
                         <td>{solicitud.proyecto}</td>
                         <td>{solicitud.area}</td>
                         <td>{solicitud.observaciones}</td>
